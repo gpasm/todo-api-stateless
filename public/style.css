@@ -1,0 +1,104 @@
+/* import fonts or other imports rules */
+
+/* to-do
+1 ) add hover effect to all buttons
+2 ) add a Google font 
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+:root{
+    --bg-color: #032c7d;
+    --box-shadow: rgba(0,0,0,0.1);
+    --display-btn:  #6f67cb;
+    --delete-btn: #e398ae;
+    --submit-btn: #424691;
+    --hover-darken: 0.1;
+  }
+  
+  *{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+  }
+  
+  body {
+      font-family: 'Roboto', sans-serif;
+      padding: 20px;
+      background-color: var(--bg-color);
+      color: #333;
+    }
+    
+    .container {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+      max-width: 35rem;
+      margin: 0 auto;
+    }
+    
+    .block {
+      background: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px var(--box-shadow);
+    }
+    
+    button {
+      padding: 10px;
+      margin-top: 10px;
+      cursor: pointer;
+      border: none;
+      border-radius: 6px;
+      font-weight: 600;
+      transition: background-color 0.3s ease;
+      width: 100%;
+    }
+    
+    #displayTodos {
+      background-color: var(--display-btn);
+      color: white;
+    }
+
+    #displayTodos:hover{
+      background-color: #4b4376;
+    }
+    
+    #submitTodo {
+      background-color: var(--submit-btn);
+      color: white;
+    }
+
+    #submitTodo:hover {
+      background-color: #353c53;
+    }
+    
+    #deleteTodo {
+      background-color: var(--delete-btn);
+      color: white;
+    }
+
+    #deleteTodo:hover {
+      background-color: #e59288;
+    }
+    
+    input {
+      display: block;
+      margin: 6px 0;
+      padding: 10px;
+      width: 100%;
+      font-size: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      box-sizing: border-box;
+    }
+
+    pre#todoDisplay {
+      font-family: 'Courier New', Courier, monospace;
+      background-color: #f9f9f9;
+      padding: 15px;
+      border-radius: 8px;
+      overflow-x: auto;
+    }
+    
+  
